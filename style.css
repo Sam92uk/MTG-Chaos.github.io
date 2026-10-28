@@ -1,0 +1,55 @@
+/* Universal Style */
+
+* {
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box !important;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 25px;
+
+}
+
+/* Heading Style */
+
+h1 {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+/* Section Style */
+section {
+  width: 600px;
+  height: 300px;
+  display: inline-block;
+  border: 2px solid red;
+}
+
+div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.search {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.search section {
+  width: 75%;
+}

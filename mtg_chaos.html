@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>MTG Chaos</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>MTG Chaos Storage</h1>
+        
+        </header>
+
+            <div>
+
+                <section>
+
+                    <h2>Create Storage Box</h2>
+
+                    <form action="" method="post">
+
+                    <label>Unique Box Code</label>
+
+                        <input 
+
+                        type="text" 
+                        
+                        id="box-code" 
+                        
+                        name="box" 
+                        
+                        pattern="^[A-Z]{3}-[0-9]{3}$" 
+                        
+                        required
+                        
+                        />
+
+                    <label>Description</label>
+
+                        <input 
+                        
+                        type="text" 
+                        
+                        id="box-des" 
+                        
+                        name="des" 
+                        
+                        required
+                        />
+
+                        <input 
+                        
+                        type="submit" 
+                        
+                        value="Create Box"
+
+                        />
+
+                    </form>
+
+                </section>
+
+                <section>
+
+                    <h2>Upload Card to Boxes</h2>
+
+                    <form action="" method="POST">
+
+                    <label>Card Name</label>
+
+                        <input 
+                        
+                        type="text" 
+                        
+                        id="card-name" 
+                        
+                        name="card" 
+                        required
+                        />
+
+                    <label>Choose Set</label>
+
+                        <input 
+                        
+                        type="text" 
+                        
+                        name="set" 
+                        
+                        id="card-set" 
+                        
+                        placeholder="EOE,LOT,HOB" 
+                        
+                        pattern="^[A-Z]{3}$" 
+                        
+                        required
+                        
+                        />
+
+                    <label>Choose Card Type</label>
+                    
+                        <input 
+                        
+                        type="text" 
+                        
+                        name="type" 
+                        
+                        id="card-type" 
+                        
+                        placeholder="Instant,Creature,Sorcery" 
+                        
+                        required
+                        
+                        />
+
+                    <label>Foil</label>
+                    
+                        <input 
+                        
+                        type="radio" 
+                        
+                        name="foil" 
+                        
+                        id="foil" 
+                        
+                        value="foil" 
+                        
+                        required
+                        
+                        /> 
+                    
+                    <label>Non-Foil</label>
+                    
+                        <input 
+                        
+                        type="radio" 
+                        
+                        name="foil" 
+                        
+                        id="non-foil" 
+                        
+                        value="non-foil"
+                        
+                        />
+
+                    <label>Condition:</label>
+                    
+                        <select 
+                        
+                        id="card-condition" 
+                        
+                        name="condition" 
+                        
+                        required
+                        
+                        >
+                    
+                        <option value="not_specified">-- Select condition --</option> 
+                    
+                        <option value="lightly_played">Lightly Played</option>
+                    
+                        <option value="played">Played</option>
+                    
+                        <option value="good">Good</option>
+                    
+                        <option value="near_mint">Near Mint</option>
+                    
+                        </select>
+
+                    <label>Stored in Box</label>
+                    
+                    <input list="box-type" name="box-list" required>   
+                    
+                        <datalist id="box-type" name="box-list">
+                    
+                        <option value="Box1"></option>
+                    
+                        <option value="Box2"></option>
+                    
+                        <option value="Box3"></option>
+                    
+                        <option value="Box4"></option>
+                    
+                        <option value="Box5"></option>
+                    
+                        </datalist>
+                        
+                    <input type="submit" value="Add Card to Box" >  
+                    
+                    </form>
+        
+                </section>
+
+                <!-- placeholder for a function to import a deck list-->
+                <section>
+                    <h2>Deck List</h2>
+                    <p>Import deck list funtion here</p>
+                </section>
+
+                <!-- placeholder for a function to export a box list-->
+                <section>
+                    <h2>Export Box</h2>
+                    <p>Export box list function here</p>
+                </section>
+
+            </div>
+
+            <div class="search">
+
+                <!-- placeholder for a function to search for a specific card or box-->
+                <section >
+                    <h2>Search Function</h2>
+                    <p>Search function goes here</p>
+                </section>
+                
+            </div>            
+
+    </body>
+
+</html>
